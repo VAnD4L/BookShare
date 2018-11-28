@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout =  findViewById(R.id.drawable_layout);
         navigationView =  findViewById(R.id.navigation_view);
         View navView =  navigationView.inflateHeaderView(R.layout.navigation_header); // TODO add imageButton to link into profile
-        //postList = (RecyclerView) findViewById(R.id.);
+
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -49,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.nav_home:
                 Toast.makeText(this,"Home",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_library:
+                Toast.makeText(this,"Library",Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.nav_friends:

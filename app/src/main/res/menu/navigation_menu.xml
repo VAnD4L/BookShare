@@ -10,6 +10,10 @@
         android:title="@string/home"
         android:icon="@drawable/home"/>
     <item
+        android:id="@+id/nav_library"
+        android:title="@string/library"
+        android:icon="@drawable/library"/>
+    <item
         android:id="@+id/nav_friends"
         android:title="@string/Friends"
         android:icon="@drawable/friends"/>
