@@ -11,16 +11,26 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <include
+            android:id="@+id/main_page_toolbar"
+
+            layout="@layout/app_bar_layout">
+        </include>
 
         <FrameLayout
             android:id="@+id/main_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main_page_toolbar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            >
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/all_user_post_list"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                 />
         </FrameLayout>
     </RelativeLayout>
 
@@ -30,5 +40,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:layout_marginBottom="3dp"
-        app:menu="@menu/navigation_menu"></android.support.design.widget.NavigationView>
+        app:menu="@menu/navigation_menu">
+
+    </android.support.design.widget.NavigationView>
 </android.support.v4.widget.DrawerLayout>
